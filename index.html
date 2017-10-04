@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="./CSS/styles.css" rel="stylesheet" type="text/css">
+    <script src="./JS/script.js" type="text/javascript" rel="script"></script>
+</head>
+<body>
+<div id="board">
+    <table>
+        <tr class="rows tiles">
+            <td class="tile" id="t-a1"></td>
+            <td class="wall vertical" id="v-1a"></td>
+            <td class="tile" id="t-b1"></td>
+            <td class="wall vertical" id="v-1b"></td>
+            <td class="tile" id="t-c1"></td>
+            <td class="wall vertical" id="v-1c"></td>
+            <td class="tile" id="t-d1"></td>
+            <td class="wall vertical" id="v-1d"></td>
+            <td class="tile occupied blue" id="t-e1">
+                <img src="./images/blue.png" class="pawn">
+            </td>
+            <td class="wall vertical" id="v-1e"></td>
+            <td class="tile" id="t-f1"></td>
+            <td class="wall vertical" id="v-1f"></td>
+            <td class="tile" id="t-g1"></td>
+            <td class="wall vertical" id="v-1g"></td>
+            <td class="tile" id="t-h1"></td>
+            <td class="wall vertical" id="v-1h"></td>
+            <td class="tile" id="t-i1"></td>
+        </tr>
+        <tr class="rows walls">
+            <td class="wall horizontal" id="h-1a"></td>
+            <td class="divider" id="d-1a"></td>
+            <td class="wall horizontal" id="h-1b"></td>
+            <td class="divider" id="d-1b"></td>
+            <td class="wall horizontal" id="h-1c"></td>
+            <td class="divider" id="d-1c"></td>
+            <td class="wall horizontal" id="h-1d"></td>
+            <td class="divider" id="d-1d"></td>
+            <td class="wall horizontal" id="h-1e"></td>
+            <td class="divider" id="d-1e"></td>
+            <td class="wall horizontal" id="h-1f"></td>
+            <td class="divider" id="d-1f"></td>
+            <td class="wall horizontal" id="h-1g"></td>
+            <td class="divider" id="d-1g"></td>
+            <td class="wall horizontal" id="h-1h"></td>
+            <td class="divider" id="d-1h"></td>
+            <td class="wall horizontal" id="h-1i"></td>
+        </tr>
+        <tr class="rows tiles">
+            <td class="tile" id="t-a2"></td>
+            <td class="wall vertical" id="v-2a"></td>
+            <td class="tile" id="t-b2"></td>
+            <td class="wall vertical" id="v-2b"></td>
+            <td class="tile" id="t-c2"></td>
+            <td class="wall vertical" id="v-2c"></td>
+            <td class="tile" id="t-d2"></td>
+            <td class="wall vertical" id="v-2d"></td>
+            <td class="tile" id="t-e2"></td>
+            <td class="wall vertical" id="v-2e"></td>
+            <td class="tile" id="t-f2"></td>
+            <td class="wall vertical" id="v-2f"></td>
+            <td class="tile" id="t-g2"></td>
+            <td class="wall vertical" id="v-2g"></td>
+            <td class="tile" id="t-h2"></td>
+            <td class="wall vertical" id="v-2h"></td>
+            <td class="tile" id="t-i2"></td>
+        </tr>
+        <tr class="rows walls">
+            <td class="wall horizontal" id="h-2a"></td>
+            <td class="divider" id="d-2a"></td>
+            <td class="wall horizontal" id="h-2b"></td>
+            <td class="divider" id="d-2b"></td>
+            <td class="wall horizontal" id="h-2c"></td>
+            <td class="divider" id="d-2c"></td>
+            <td class="wall horizontal" id="h-2d"></td>
+            <td class="divider" id="d-2d"></td>
+            <td class="wall horizontal" id="h-2e"></td>
+            <td class="divider" id="d-2e"></td>
+            <td class="wall horizontal" id="h-2f"></td>
+            <td class="divider" id="d-2f"></td>
+            <td class="wall horizontal" id="h-2g"></td>
+            <td class="divider" id="d-2g"></td>
+            <td class="wall horizontal" id="h-2h"></td>
+            <td class="divider" id="d-2h"></td>
+            <td class="wall horizontal" id="h-2i"></td>
+        </tr>
+        <tr class="rows tiles">
+            <td class="tile" id="t-a3"></td>
+            <td class="wall vertical" id="v-3a"></td>
+            <td class="tile" id="t-b3"></td>
+            <td class="wall vertical" id="v-3b"></td>
+            <td class="tile" id="t-c3"></td>
+            <td class="wall vertical" id="v-3c"></td>
+            <td class="tile" id="t-d3"></td>
+            <td class="wall vertical" id="v-3d"></td>
+            <td class="tile" id="t-e3"></td>
+            <td class="wall vertical" id="v-3e"></td>
+            <td class="tile" id="t-f3"></td>
+            <td class="wall vertical" id="v-3f"></td>
+            <td class="tile" id="t-g3"></td>
+            <td class="wall vertical" id="v-3g"></td>
+            <td class="tile" id="t-h3"></td>
+            <td class="wall vertical" id="v-3h"></td>
+            <td class="tile" id="t-i3"></td>
+        </tr>
+        <tr class="rows walls">
+            <td class="wall horizontal" id="h-3a"></td>
+            <td class="divider" id="d-3a"></td>
+            <td class="wall horizontal" id="h-3b"></td>
+            <td class="divider" id="d-3b"></td>
+            <td class="wall horizontal" id="h-3c"></td>
+            <td class="divider" id="d-3c"></td>
+            <td class="wall horizontal" id="h-3d"></td>
+            <td class="divider" id="d-3d"></td>
+            <td class="wall horizontal" id="h-3e"></td>
+            <td class="divider" id="d-3e"></td>
+            <td class="wall horizontal" id="h-3f"></td>
+            <td class="divider" id="d-3f"></td>
+            <td class="wall horizontal" id="h-3g"></td>
+            <td class="divider" id="d-3g"></td>
+            <td class="wall horizontal" id="h-3h"></td>
+            <td class="divider" id="d-3h"></td>
+            <td class="wall horizontal" id="h-3i"></td>
+        </tr>
+        <tr class="rows tiles">
+            <td class="tile" id="t-a4"></td>
+            <td class="wall vertical" id="v-4a"></td>
+            <td class="tile" id="t-b4"></td>
+            <td class="wall vertical" id="v-4b"></td>
+            <td class="tile" id="t-c4"></td>
+            <td class="wall vertical" id="v-4c"></td>
+            <td class="tile" id="t-d4"></td>
+            <td class="wall vertical" id="v-4d"></td>
+            <td class="tile" id="t-e4"></td>
+            <td class="wall vertical" id="v-4e"></td>
+            <td class="tile" id="t-f4"></td>
+            <td class="wall vertical" id="v-4f"></td>
+            <td class="tile" id="t-g4"></td>
+            <td class="wall vertical" id="v-4g"></td>
+            <td class="tile" id="t-h4"></td>
+            <td class="wall vertical" id="v-4h"></td>
+            <td class="tile" id="t-i4"></td>
+        </tr>
+        <tr class="rows walls">
+            <td class="wall horizontal" id="h-4a"></td>
+            <td class="divider" id="d-4a"></td>
+            <td class="wall horizontal" id="h-4b"></td>
+            <td class="divider" id="d-4b"></td>
+            <td class="wall horizontal" id="h-4c"></td>
+            <td class="divider" id="d-4c"></td>
+            <td class="wall horizontal" id="h-4d"></td>
+            <td class="divider" id="d-4d"></td>
+            <td class="wall horizontal" id="h-4e"></td>
+            <td class="divider" id="d-4e"></td>
+            <td class="wall horizontal" id="h-4f"></td>
+            <td class="divider" id="d-4f"></td>
+            <td class="wall horizontal" id="h-4g"></td>
+            <td class="divider" id="d-4g"></td>
+            <td class="wall horizontal" id="h-4h"></td>
+            <td class="divider" id="d-4h"></td>
+            <td class="wall horizontal" id="h-4i"></td>
+        </tr>
+        <tr class="rows tiles">
+            <td class="tile occupied yellow" id="t-a5">
+                <img src="./images/yellow.png" class="pawn">
+            </td>
+            <td class="wall vertical" id="v-5a"></td>
+            <td class="tile" id="t-b5"></td>
+            <td class="wall vertical" id="v-5b"></td>
+            <td class="tile" id="t-c5"></td>
+            <td class="wall vertical" id="v-5c"></td>
+            <td class="tile" id="t-d5"></td>
+            <td class="wall vertical" id="v-5d"></td>
+            <td class="tile" id="t-e5"></td>
+            <td class="wall vertical" id="v-5e"></td>
+            <td class="tile" id="t-f5"></td>
+            <td class="wall vertical" id="v-5f"></td>
+            <td class="tile" id="t-g5"></td>
+            <td class="wall vertical" id="v-5g"></td>
+            <td class="tile" id="t-h5"></td>
+            <td class="wall vertical" id="v-5h"></td>
+            <td class="tile occupied green" id="t-i5">
+                <img src="./images/green.png" class="pawn">
+            </td>
+        </tr>
+        <tr class="rows walls">
+            <td class="wall horizontal" id="h-5a"></td>
+            <td class="divider" id="d-5a"></td>
+            <td class="wall horizontal" id="h-5b"></td>
+            <td class="divider" id="d-5b"></td>
+            <td class="wall horizontal" id="h-5c"></td>
+            <td class="divider" id="d-5c"></td>
+            <td class="wall horizontal" id="h-5d"></td>
+            <td class="divider" id="d-5d"></td>
+            <td class="wall horizontal" id="h-5e"></td>
+            <td class="divider" id="d-5e"></td>
+            <td class="wall horizontal" id="h-5f"></td>
+            <td class="divider" id="d-5f"></td>
+            <td class="wall horizontal" id="h-5g"></td>
+            <td class="divider" id="d-5g"></td>
+            <td class="wall horizontal" id="h-5h"></td>
+            <td class="divider" id="d-5h"></td>
+            <td class="wall horizontal" id="h-5i"></td>
+        </tr>
+        <tr class="rows tiles">
+            <td class="tile" id="t-a6"></td>
+            <td class="wall vertical" id="v-6a"></td>
+            <td class="tile" id="t-b6"></td>
+            <td class="wall vertical" id="v-6b"></td>
+            <td class="tile" id="t-c6"></td>
+            <td class="wall vertical" id="v-6c"></td>
+            <td class="tile" id="t-d6"></td>
+            <td class="wall vertical" id="v-6d"></td>
+            <td class="tile" id="t-e6"></td>
+            <td class="wall vertical" id="v-6e"></td>
+            <td class="tile" id="t-f6"></td>
+            <td class="wall vertical" id="v-6f"></td>
+            <td class="tile" id="t-g6"></td>
+            <td class="wall vertical" id="v-6g"></td>
+            <td class="tile" id="t-h6"></td>
+            <td class="wall vertical" id="v-6h"></td>
+            <td class="tile" id="t-i6"></td>
+        </tr>
+        <tr class="rows walls">
+            <td class="wall horizontal" id="h-6a"></td>
+            <td class="divider" id="d-6a"></td>
+            <td class="wall horizontal" id="h-6b"></td>
+            <td class="divider" id="d-6b"></td>
+            <td class="wall horizontal" id="h-6c"></td>
+            <td class="divider" id="d-6c"></td>
+            <td class="wall horizontal" id="h-6d"></td>
+            <td class="divider" id="d-6d"></td>
+            <td class="wall horizontal" id="h-6e"></td>
+            <td class="divider" id="d-6e"></td>
+            <td class="wall horizontal" id="h-6f"></td>
+            <td class="divider" id="d-6f"></td>
+            <td class="wall horizontal" id="h-6g"></td>
+            <td class="divider" id="d-6g"></td>
+            <td class="wall horizontal" id="h-6h"></td>
+            <td class="divider" id="d-6h"></td>
+            <td class="wall horizontal" id="h-6i"></td>
+        </tr>
+        <tr class="rows tiles">
+            <td class="tile" id="t-a7"></td>
+            <td class="wall vertical" id="v-7a"></td>
+            <td class="tile" id="t-b7"></td>
+            <td class="wall vertical" id="v-7b"></td>
+            <td class="tile" id="t-c7"></td>
+            <td class="wall vertical" id="v-7c"></td>
+            <td class="tile" id="t-d7"></td>
+            <td class="wall vertical" id="v-7d"></td>
+            <td class="tile" id="t-e7"></td>
+            <td class="wall vertical" id="v-7e"></td>
+            <td class="tile" id="t-f7"></td>
+            <td class="wall vertical" id="v-7f"></td>
+            <td class="tile" id="t-g7"></td>
+            <td class="wall vertical" id="v-7g"></td>
+            <td class="tile" id="t-h7"></td>
+            <td class="wall vertical" id="v-7h"></td>
+            <td class="tile" id="t-i7"></td>
+        </tr>
+        <tr class="rows walls">
+            <td class="wall horizontal" id="h-7a"></td>
+            <td class="divider" id="d-7a"></td>
+            <td class="wall horizontal" id="h-7b"></td>
+            <td class="divider" id="d-7b"></td>
+            <td class="wall horizontal" id="h-7c"></td>
+            <td class="divider" id="d-7c"></td>
+            <td class="wall horizontal" id="h-7d"></td>
+            <td class="divider" id="d-7d"></td>
+            <td class="wall horizontal" id="h-7e"></td>
+            <td class="divider" id="d-7e"></td>
+            <td class="wall horizontal" id="h-7f"></td>
+            <td class="divider" id="d-7f"></td>
+            <td class="wall horizontal" id="h-7g"></td>
+            <td class="divider" id="d-7g"></td>
+            <td class="wall horizontal" id="h-7h"></td>
+            <td class="divider" id="d-7h"></td>
+            <td class="wall horizontal" id="h-7i"></td>
+        </tr>
+        <tr class="rows tiles">
+            <td class="tile" id="t-a8"></td>
+            <td class="wall vertical" id="v-8a"></td>
+            <td class="tile" id="t-b8"></td>
+            <td class="wall vertical" id="v-8b"></td>
+            <td class="tile" id="t-c8"></td>
+            <td class="wall vertical" id="v-8c"></td>
+            <td class="tile" id="t-d8"></td>
+            <td class="wall vertical" id="v-8d"></td>
+            <td class="tile" id="t-e8"></td>
+            <td class="wall vertical" id="v-8e"></td>
+            <td class="tile" id="t-f8"></td>
+            <td class="wall vertical" id="v-8f"></td>
+            <td class="tile" id="t-g8"></td>
+            <td class="wall vertical" id="v-8g"></td>
+            <td class="tile" id="t-h8"></td>
+            <td class="wall vertical" id="v-8h"></td>
+            <td class="tile" id="t-i8"></td>
+        </tr>
+        <tr class="rows walls">
+            <td class="wall horizontal" id="h-8a"></td>
+            <td class="divider" id="d-8a"></td>
+            <td class="wall horizontal" id="h-8b"></td>
+            <td class="divider" id="d-8b"></td>
+            <td class="wall horizontal" id="h-8c"></td>
+            <td class="divider" id="d-8c"></td>
+            <td class="wall horizontal" id="h-8d"></td>
+            <td class="divider" id="d-8d"></td>
+            <td class="wall horizontal" id="h-8e"></td>
+            <td class="divider" id="d-8e"></td>
+            <td class="wall horizontal" id="h-8f"></td>
+            <td class="divider" id="d-8f"></td>
+            <td class="wall horizontal" id="h-8g"></td>
+            <td class="divider" id="d-8g"></td>
+            <td class="wall horizontal" id="h-8h"></td>
+            <td class="divider" id="d-8h"></td>
+            <td class="wall horizontal" id="h-8i"></td>
+        </tr>
+        <tr class="rows tiles">
+            <td class="tile" id="t-a9"></td>
+            <td class="wall vertical" id="v-9a"></td>
+            <td class="tile" id="t-b9"></td>
+            <td class="wall vertical" id="v-9b"></td>
+            <td class="tile" id="t-c9"></td>
+            <td class="wall vertical" id="v-9c"></td>
+            <td class="tile" id="t-d9"></td>
+            <td class="wall vertical" id="v-9d"></td>
+            <td class="tile occupied red" id="t-e9">
+                <img src="./images/red.png" class="pawn">
+            </td>
+            <td class="wall vertical" id="v-9e"></td>
+            <td class="tile" id="t-f9"></td>
+            <td class="wall vertical" id="v-9f"></td>
+            <td class="tile" id="t-g9"></td>
+            <td class="wall vertical" id="v-9g"></td>
+            <td class="tile" id="t-h9"></td>
+            <td class="wall vertical" id="v-9h"></td>
+            <td class="tile" id="t-i9"></td>
+        </tr>
+    </table>
+</div>
+<p id="status"></p>
+<div id="game-over-outer">
+    <div id="game-over-inner">
+        <p><span id="winner-name"></span> player wins! </p>
+        <button onclick="location.reload();">Play again?</button>
+    </div>
+</div>
+</body>
+</html>

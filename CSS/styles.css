@@ -1,0 +1,83 @@
+#board {
+    padding-left: 20px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+
+.tile {
+    z-index: 2;
+    border: .5px solid black;
+    height: 70px;
+    width: 70px;
+    text-align: center;
+}
+
+.wall.vertical {
+    width: 6px;
+    height: 70px;
+}
+
+.wall.horizontal {
+    height: 6px;
+    width: 70px;
+}
+
+table {
+    padding: 8px;
+    border-spacing: 0;
+    border: 1px solid black;
+}
+
+.divider {
+    width: 6px;
+    height: 6px;
+}
+
+.taken {
+    background-color: black;
+}
+
+.pawn {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
+
+.preview {
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    opacity: 0.3;
+}
+
+p#status {
+    position: fixed;
+    top: 30px;
+    right: 60px;
+}
+
+#game-over-outer {
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .75);
+    z-index: 99;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#game-over-inner {
+    padding-top: 50px;
+    top: 35vh;
+    width: 40vw;
+    height: 30vh;
+    background-color: white;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 100;
+}
